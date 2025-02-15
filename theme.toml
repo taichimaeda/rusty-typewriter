@@ -1,0 +1,19 @@
+name = 'Rusty Typewriter'
+license = 'MIT'
+licenselink = 'https://github.com/math-queiroz/rusty-typewriter/LICENSE'
+description = 'A rusty hugo theme'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/math-queiroz/rusty-typewriter'
+
+# If you have a running demo of the theme
+demosite = 'https://math-queiroz.github.io/rusty-typewriter'
+
+# Taxonomy terms
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+# If the theme has a single author
+[author]
+  name = 'Matheus Queiroz'
+  homepage = 'https://math-queiroz.github.io/blog'
