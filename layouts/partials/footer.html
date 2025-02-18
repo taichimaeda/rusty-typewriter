@@ -1,1 +1,8 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="footer-copyright">
+  <div>© {{ now.Year }} {{ .Site.Params.author.name }}</div>
+  <div class="footer-copyright-small">
+    Made with ❤️ and powered by 
+    <a href="{{ .Site.Params.links.theme }}" target="_blank">Rusty Typewriter</a> theme for 
+    <a href="{{ .Site.Params.links.hugo }}" target="_blank">Hugo</a>.
+  </div>
+</div>

@@ -2,20 +2,28 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+[params]
+summaryLength = 1
+
+[params.features.home]
+showBio = true
+showAuthorImg = true
+sidePane = true
+sidePaneMedia = true
+sidePaneTags = true
+showFeatured = true
+showRecent = true
+hideRecentWhenFeatured = true
+countRecent = 5
+
+[params.links]
+hugo = 'https://gohugo.io/'
+theme = 'https://github.com/math-queiroz/rusty-typewriter'
 
 [[menus.main]]
 name = 'Posts'
 pageRef = '/posts'
-weight = 20
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+weight = 1
 
 [module]
   [module.hugoVersion]

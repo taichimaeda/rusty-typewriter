@@ -3,15 +3,15 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <div class="container">
-    <header>
+<body class="notransition">
+  <div id="main-container">
+    <header id="main-header">
       {{ partial "header.html" . }}
     </header>
-    <main>
+    <main id="main-content">
       {{ block "main" . }}{{ end }}
     </main>
-    <footer>
+    <footer id="main-footer">
       {{ partial "footer.html" . }}
     </footer>
   </div>

@@ -1,25 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+:root {
+  --body-text-color: #222;
+  --body-background-color: #f2f0e3;
+
+  --primary-color: #cd5c5c;
+  --selection-color: #dda19b;
+
+  --dim-color: #88888844;
+
+  --font-family-main: "Bricolage Grotesque", sans-serif;
+  --font-family-content: "Spectral", serif;
+  --font-family-summary: "Spectral", serif;
+
+  --container-breakpoint: 768px;
+}
+
+:root[color-scheme^='dark'] {
+  --body-text-color: #f2f0e3;
+  --body-background-color: #222;
+
+  --primary-color: #cd5c5c;
+  --selection-color: #7d4141;
+}
+
+:root[color-scheme^='dark'] .dark-icon { display: none; }
+:root[color-scheme^='light'] .light-icon { display: none; }
+
+html {
+  ::-moz-selection, ::selection {
+    color: inherit;
+    background: var(--selection-color);
+  }
+}
 
 body {
-  background-color: #f2f0e3;
-  color: #222;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  margin: 0 !important;
+  width: 100%;
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+  font-family: var(--font-family-main);
   line-height: 1.5;
   margin: 1rem;
-  max-width: 768px;
+  transition: background-color 100ms ease-in;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+.notransition { transition: none !important; }
+
+div#main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 1rem);
+  max-width: var(--container-breakpoint);
+  padding-top: 1rem;
+  margin: 0 auto;
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+header#main-header {
+  margin-bottom: 4rem;
+  border-bottom: 1px var(--dim-color) solid;
+}
+
+main#main-content {
+  flex-grow: 1;
+}
+
+footer#main-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 5rem auto 0 auto;
+}
+
+section {
+  font-family: var(--font-family-content);
+  text-align: justify;
 }
 
 a {
-  color: #cd5c5c;
+  color: var(--primary-color);
   text-decoration: none;
+}
+
+a > svg {
+  color: var(--body-text-color);
+  height: 22px;
+  width: 22px;
+  margin: 5px 5px 0;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.nav-right {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  line-height: 50px;
+  margin: 0 .5rem;
+  font-size: 14px;
+}
+
+.footer-copyright {
+  width: fit-content;
+  margin: 0 auto;
+  padding: .8rem 2rem;
+  text-align: center;
+  font-size: .7rem;
+  border-top: 1px var(--dim-color) solid;
+}
+
+.footer-copyright-small {
+  font-size: .8rem;
+}
+
+/* TO-DO: Break into new files beyond this point */
+
+.author-bio {
+  text-align: center;
+  margin: 3rem auto 5rem;
+  width: fit-content;
+}
+
+.author-bio-greets {
+  margin: .1rem;
+}
+
+.author-bio-text {
+  width: 70%;
+  margin: 0 15%;
+}
+
+.flat-list-item {
+  padding: .5rem;
+  border-top: 1px var(--dim-color) solid; 
+}
+
+.flat-list-item > small {
+  overflow: hidden;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.flat-list-item > small > p {
+  font-family: var(--font-family-summary);
+  margin: .25rem 0;
+}
+
+.list-group-key {
+  text-align: right;
+  padding-bottom: .5rem;
+  border-bottom: 1px var(--dim-color) solid;
+}
+
+.list-group-heading {
+  margin-top: 1rem;
+}
+
+.list-group-heading > a {
+  font-size: 1.1rem;
+}
+
+.list-group-summary {
+  font-family: var(--font-family-summary);
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.single-header > h1 {
+  margin: .5rem 0 0;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs > li {
+  display: inline-block;
 }

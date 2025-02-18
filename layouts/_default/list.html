@@ -1,8 +1,16 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+  {{ range .Pages.GroupByDate "2006" }}
+    <div class="list-group-key">{{ .Key }}</div>
+    {{ range .Pages }}
+      <div class="list-group-heading">
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <time style="float: right;" datetime="2023-05-02T00:00:00Z">
+          {{ dateFormat (or .Site.Params.dateFormat "Jan 2") .Date }}
+        </time>
+      </div>
+      <div class="list-group-summary content-font">{{ .Summary }}</div>
+    {{ end }}
   {{ end }}
 {{ end }}

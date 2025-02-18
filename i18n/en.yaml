@@ -2,3 +2,10 @@
 theme_light: Light Theme
 theme_dark: Dark Theme
 
+bio_greets: Welcome to my blog!
+bio_text: Imagine a super cool quote here, or a welcome message or wathever you like, your call...
+
+featured_posts: Featured Posts
+recent_posts: Recent Posts
+
+breadcrumb_home: Home

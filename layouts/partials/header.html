@@ -1,2 +1,12 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="nav" role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="/" style="color: inherit;">{{ site.Title }}</a>
+  </div>
+  <div class="nav-right">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    <a id="theme-switcher" href="#">
+      {{ partial "svg/sun.svg" }}
+      {{ partial "svg/moon.svg" }}
+    </a>
+  </div>
+</div>

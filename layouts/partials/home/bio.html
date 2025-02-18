@@ -1,0 +1,11 @@
+{{ if site.Params.features.home.showBio }}
+  <div class="author-bio">
+    {{ if site.Params.features.home.showAuthorImg }}
+      <img style="border-radius:100%;" width="70px" src="images/profile.jpg"/>
+    {{ end }}
+
+    <h1 class="author-bio-greets">{{ i18n "bio_greets" }}</h1>
+    <div class="author-bio-text">{{ i18n "bio_text" }}
+    </div>
+  </div>
+{{ end }}

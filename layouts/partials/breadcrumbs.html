@@ -1,0 +1,15 @@
+<!-- https://discourse.gohugo.io/t/generating-breadcrumbs-for-hugo/42059 -->
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+  {{- $data := newScratch }}
+  {{- range $index, $value := .Ancestors.Reverse }}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      {{- $data.Set "counter" $index }}
+      {{- $data.Add "counter" 1 }}
+      <a itemprop="item" href="{{ .Permalink }}">
+        <span itemprop="name">{{ cond (eq $index 0) (i18n "breadcrumb_home") .Title }}</span>
+      </a>
+      <meta itemprop="position" content='{{ $data.Get "counter" }}' />
+    </li>
+    <span> » </span>
+  {{- end }}
+</ol>

@@ -1,7 +1,19 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+
+  {{ partial "home/bio.html" }}
+
+  {{ $featured := where site.RegularPages "Params.featured" true }}
+  {{ if (and $featured site.Params.features.home.showFeatured) }}
+    <div style="width:95%;margin:0 auto;">
+      {{ partial "home/micro-list.html" (dict "items" $featured "title" (i18n "featured_posts")) }}
+    </div>
+  {{ end }}
+
+  {{ if and site.RegularPages site.Params.features.home.showRecent }}
+    {{ $recent := cond site.Params.features.home.hideRecentWhenFeatured (where site.RegularPages "Params.featured" "!=" true) site.RegularPages }}
+    <div style="width:95%;margin:0 auto;">
+      {{ partial "home/micro-list.html" (dict "items" $recent "title" (i18n "recent_posts")) }}
+    </div>
   {{ end }}
 {{ end }}
