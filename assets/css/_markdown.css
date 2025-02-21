@@ -1,0 +1,13 @@
+pre:has(code) {
+  padding: .8rem;
+  border-radius: .3rem;
+  background-color: #333030 !important;
+  background-color: #333030 !important;
+}
+
+code:parent(not(pre)) {
+  padding: .125rem;
+  border-radius: .2rem;
+  background-color: #333030 !important;
+  background-color: #333030 !important;
+}

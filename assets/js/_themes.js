@@ -14,14 +14,15 @@
       }
     };
 
+    const toggle = (state) => state === "light" ? "dark" : "light";
     const initTheme = (state) => {
-      document.documentElement.setAttribute("color-scheme", state === "light" ? "dark" : "light");
+      document.documentElement.setAttribute("color-scheme", toggle(state));
     };
 
     const toggleTheme = () => {
       const state = getCachedTheme();
-        localStorage.setItem("color-scheme", state === "light" ? "dark" : "light");
-        initTheme(state === "light" ? "dark" : "light");
+        localStorage.setItem("color-scheme", toggle(state));
+        initTheme(toggle(state));
     };
 
     window.addEventListener("DOMContentLoaded", () => {

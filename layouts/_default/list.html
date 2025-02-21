@@ -1,16 +1,23 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages.GroupByDate "2006" }}
-    <div class="list-group-key">{{ .Key }}</div>
-    {{ range .Pages }}
+
+{{- define "main" -}}
+  <h1>{{- .Title -}}</h1>
+  {{- .Content -}}
+  {{- $pages := (.Paginate (.Pages.GroupByDate "2006") site.Params.rtwt.countPageItems) -}}
+  {{- range $pages.PageGroups -}}
+    <div class="list-group-key">{{- .Key -}}</div>
+    {{- range .Pages -}}
       <div class="list-group-heading">
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>
         <time style="float: right;" datetime="2023-05-02T00:00:00Z">
-          {{ dateFormat (or .Site.Params.dateFormat "Jan 2") .Date }}
+          {{- dateFormat (or .Site.Params.dateFormat "Jan 2") .Date -}}
         </time>
       </div>
-      <div class="list-group-summary content-font">{{ .Summary }}</div>
-    {{ end }}
-  {{ end }}
-{{ end }}
+      <div class="list-group-summary content-font">{{- partial "components/summary.html" . -}}</div>
+    {{- end -}}
+  {{- end -}}
+  {{ template "_internal/pagination.html" . }}
+{{- end -}}
+
+{{- define "side" -}}
+  
+{{- end -}}

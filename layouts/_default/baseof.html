@@ -4,16 +4,25 @@
   {{ partial "head.html" . }}
 </head>
 <body class="notransition">
-  <div id="main-container">
+  <div id="container">
     <header id="main-header">
-      {{ partial "header.html" . }}
+      {{- partial "header.html" . -}}
     </header>
-    <main id="main-content">
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer id="main-footer">
-      {{ partial "footer.html" . }}
-    </footer>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content">
+          {{- block "main" . -}}{{- end -}}
+        </main>
+        <footer id="main-footer">
+          {{- partial "footer.html" . -}}
+        </footer>
+      </div>
+      {{- if site.Params.rtwt.sidePane -}}
+        <aside id="side-pane">
+          {{- block "side" . -}}{{- end -}}
+        </aside>
+      {{- end -}}
+    </div>
   </div>
 </body>
 </html>

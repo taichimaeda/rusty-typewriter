@@ -2,19 +2,40 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
 
+[rusty_typewriter]
+  [params.rtwt]
+  sidePane = true
+  countPageItems = 7 
+  [params.rtwt.home]
+  showBio = true
+  showAuthorImg = true
+  sidePaneMedia = true
+  sidePaneTags = true
+  showFeatured = true
+  showRecent = true
+  hideRecentWhenFeatured = true
+  countRecent = 5
+  [params.rtwt.side.home]
+  taxonomies = ['tags']
+  countTaxonomy = 5
+  [params.rtwt.side.list]
+  [params.rtwt.side.single]
+  showTableOfContents = true
+  showAttachments = true
+  showRelated = true
+  countRelated = 5
+
+[related]
+  includeNewer = true
+  [[related.indices]]
+  name = 'tags'
+  weight = 100
+
+[taxonomies]
+tag = 'tags'
+
 [params]
 summaryLength = 1
-
-[params.features.home]
-showBio = true
-showAuthorImg = true
-sidePane = true
-sidePaneMedia = true
-sidePaneTags = true
-showFeatured = true
-showRecent = true
-hideRecentWhenFeatured = true
-countRecent = 5
 
 [params.links]
 hugo = 'https://gohugo.io/'
@@ -27,5 +48,5 @@ weight = 1
 
 [module]
   [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+  extended = false
+  min = "0.116.0"

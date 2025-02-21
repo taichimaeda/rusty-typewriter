@@ -1,0 +1,6 @@
+/* commonly reused rules */
+
+.notransition { transition: none !important }
+.flex { display: flex }
+.grow { flex-grow: 1 }
+

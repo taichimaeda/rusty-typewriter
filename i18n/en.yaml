@@ -2,10 +2,20 @@
 theme_light: Light Theme
 theme_dark: Dark Theme
 
-bio_greets: Welcome to my blog!
-bio_text: Imagine a super cool quote here, or a welcome message or wathever you like, your call...
-
 featured_posts: Featured Posts
 recent_posts: Recent Posts
 
 breadcrumb_home: Home
+
+details_words: words
+details_read_time: minutes read
+
+footer: Made with ❤️ and powered by {{ .Theme }} theme for {{ .Hugo }}
+
+side_details: Details
+side_table_of_contents: Table Of Contents
+side_attachments: Attachments
+side_related: Related
+
+and: and
+see_all: See all...

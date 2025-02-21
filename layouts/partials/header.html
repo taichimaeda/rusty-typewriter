@@ -1,12 +1,12 @@
 <div class="nav" role="navigation" aria-label="Main">
   <div class="nav-left">
-    <a href="/" style="color: inherit;">{{ site.Title }}</a>
+    <a href="/" style="color: inherit;">{{- site.Title -}}</a>
   </div>
   <div class="nav-right">
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
     <a id="theme-switcher" href="#">
-      {{ partial "svg/sun.svg" }}
-      {{ partial "svg/moon.svg" }}
+      {{- partial "svg/sun.svg" -}}
+      {{- partial "svg/moon.svg" -}}
     </a>
   </div>
 </div>

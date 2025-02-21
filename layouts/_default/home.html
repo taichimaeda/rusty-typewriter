@@ -1,19 +1,22 @@
-{{ define "main" }}
-  {{ .Content }}
+{{- define "main" -}}
+  {{- .Content -}}
+  {{- partial "home/greetings.html" -}}
 
-  {{ partial "home/bio.html" }}
-
-  {{ $featured := where site.RegularPages "Params.featured" true }}
-  {{ if (and $featured site.Params.features.home.showFeatured) }}
+  {{- $featured := where site.RegularPages "Params.featured" true -}}
+  {{- if (and $featured site.Params.rtwt.home.showFeatured) -}}
     <div style="width:95%;margin:0 auto;">
-      {{ partial "home/micro-list.html" (dict "items" $featured "title" (i18n "featured_posts")) }}
+      {{- partial "home/micro-list.html" (dict "items" $featured "title" (i18n "featured_posts")) -}}
     </div>
-  {{ end }}
+  {{- end -}}
 
-  {{ if and site.RegularPages site.Params.features.home.showRecent }}
-    {{ $recent := cond site.Params.features.home.hideRecentWhenFeatured (where site.RegularPages "Params.featured" "!=" true) site.RegularPages }}
+  {{- if and site.RegularPages site.Params.rtwt.home.showRecent -}}
+    {{- $recent := cond site.Params.rtwt.home.hideRecentWhenFeatured (where site.RegularPages "Params.featured" "!=" true) site.RegularPages -}}
     <div style="width:95%;margin:0 auto;">
-      {{ partial "home/micro-list.html" (dict "items" $recent "title" (i18n "recent_posts")) }}
+      {{- partial "home/micro-list.html" (dict "items" $recent "title" (i18n "recent_posts")) -}}
     </div>
-  {{ end }}
-{{ end }}
+  {{- end -}}
+{{- end -}}
+
+{{- define "side" -}}
+  {{- partial "side/home.html" . -}}
+{{- end -}}

@@ -1,4 +1,5 @@
-{{- with resources.Get "js/main.js" }}
+{{- $bundle := resources.Match "js/_*.js" | resources.Concat "js/bundle.js" -}}
+{{- range (resources.Match "js/[!_]*.js" | append $bundle) }}
   {{- if eq hugo.Environment "development" }}
     {{- with . | js.Build }}
       <script src="{{ .RelPermalink }}"></script>

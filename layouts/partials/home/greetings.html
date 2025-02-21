@@ -1,0 +1,11 @@
+{{- if site.Params.rtwt.home.showBio -}}
+  <div class="greetings">
+    {{- if site.Params.rtwt.home.showAuthorImg -}}
+      <img style="border-radius:100%;" width="70px" src="images/profile.jpg"/>
+    {{- end -}}
+
+    <h1 class="greetings-title">{{- site.Data.rtwt.content.home.greetings -}}</h1>
+    <div class="greetings-text">{{- site.Data.rtwt.content.home.text -}}
+    </div>
+  </div>
+{{- end -}}
