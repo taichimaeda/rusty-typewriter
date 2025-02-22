@@ -6,6 +6,9 @@ html[color-scheme^='light'] .light-icon {
 }
 
 html {
+  --bgc-transition: background-color 100ms ease-in;
+
+  scroll-behavior: smooth;
   ::-moz-selection, ::selection {
     background: var(--selection-color);
   }
@@ -19,7 +22,7 @@ body {
   font-family: var(--font-family-main);
   line-height: 1.5;
   margin: 1rem;
-  transition: background-color 100ms ease-in;
+  transition: var(--bgc-transition);
 }
 
 
@@ -42,8 +45,23 @@ div#main-pane {
 
 aside#side-pane {
   width: 224px;
+  height: fit-content;
   padding: 1rem;
   overflow: hidden;
+}
+
+aside.side-sticky {
+  position: sticky;
+  top: 0;
+}
+
+header#main-header {
+  margin-bottom: 4rem;
+  border-bottom: 1px var(--dim-color) solid;
+}
+
+div#nav-menu {
+  display: flex
 }
 
 @media (max-width: 1128px) {
@@ -52,15 +70,37 @@ aside#side-pane {
   }
 }
 
-@media (max-width: 768px) {
-  div#main-pane {
-    width: unset;
+@media (min-width: 768px) {
+  div#nav-dropdown-menu {
+    display: none
   }
 }
 
-header#main-header {
-  margin-bottom: 4rem;
-  border-bottom: 1px var(--dim-color) solid;
+@media (max-width: 768px) {
+  div#nav-menu {
+    display: none;
+  }
+
+  a#nav-dropdown-button {
+    display: unset !important;
+  }
+}
+
+a#nav-dropdown-button {
+  display: none;
+}
+
+div#nav-dropdown-menu {
+  position: relative;
+  top: 85px;
+  left: 65px;
+  border-radius: 5px;
+  border: 1px var(--dim-color) solid;
+  padding: 0 1rem;
+  text-align: center;
+  background-color: var(--body-background-color);
+  transition: var(--bgc-transition);
+  z-index: 1000;
 }
 
 main#main-content {
@@ -88,3 +128,35 @@ a > svg {
   margin: 5px 5px 0;
 }
 
+blockquote {
+  padding-left: 35px; 
+  margin: auto 5px;
+  border-left: 6px var(--dim-color) solid; 
+}
+
+blockquote > p {
+  color: var(--quote-text-color);
+}
+
+table {
+  border: 1px var(--dim-color) solid; 
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px var(--dim-color) solid; 
+  padding: .2rem .5rem;
+}
+
+pre:has(code) {
+  padding: .8rem;
+  border-radius: .3rem;
+  background-color: var(--code-background-color) !important;
+}
+
+:not(pre) > code {
+  padding: .2rem;
+  border-radius: .3rem;
+  color: var(--code-text-color);
+  background-color: var(--code-background-color) !important;
+}

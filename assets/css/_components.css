@@ -10,21 +10,27 @@
 .nav-right {
   float: right;
   display: flex;
+  height: 50px;
   align-items: center;
 }
 
 .nav-item {
-  line-height: 50px;
+  line-height: 35px;
   margin: 0 .5rem;
   font-size: 14px;
 }
 
-.footer-copyright {
+.footer {
   width: fit-content;
   margin: 0 auto;
   padding: .8rem 2rem 0;
   text-align: center;
   font-size: .7rem;
+}
+
+.footer-copyright {
+  margin: .8rem;
+  padding-top: .5rem;
   border-top: 1px var(--dim-color) solid;
 }
 

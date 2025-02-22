@@ -1,5 +1,6 @@
 /* commonly reused rules */
 
+.hidden { display: none }
 .notransition { transition: none !important }
 .flex { display: flex }
 .grow { flex-grow: 1 }

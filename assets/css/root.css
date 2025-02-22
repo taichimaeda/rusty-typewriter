@@ -6,6 +6,10 @@
   --font-family-summary: "Spectral", serif;
 
   --dim-color: #88888844;
+
+  --quote-background-color: #888;
+  --code-background-color: #333030;
+  --code-text-color: #f2f0e3;
 }
 
 :root[color-scheme^='light'] {

@@ -5,6 +5,7 @@ title = 'My New Hugo Site'
 [rusty_typewriter]
   [params.rtwt]
   sidePane = true
+  sidePaneSticky = true 
   countPageItems = 7 
   [params.rtwt.home]
   showBio = true

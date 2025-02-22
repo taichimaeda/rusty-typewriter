@@ -30,6 +30,9 @@
       requestAnimationFrame(() => document.body.classList.remove("notransition"))
 
       const switcher = document.getElementById("theme-switcher");
-      switcher.addEventListener("click", () => toggleTheme());
+      switcher.addEventListener("click", e => {
+        e.preventDefault();
+        toggleTheme()
+      });
     });
 })();

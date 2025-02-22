@@ -1,13 +1,12 @@
-
 {{- define "main" -}}
-  <h1>{{- .Title -}}</h1>
+  <h1>{{- partial "title.html" . -}}</h1>
   {{- .Content -}}
   {{- $pages := (.Paginate (.Pages.GroupByDate "2006") site.Params.rtwt.countPageItems) -}}
   {{- range $pages.PageGroups -}}
     <div class="list-group-key">{{- .Key -}}</div>
     {{- range .Pages -}}
       <div class="list-group-heading">
-        <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>
+        <a href="{{- .RelPermalink -}}">{{- partial "title.html" . -}}</a>
         <time style="float: right;" datetime="2023-05-02T00:00:00Z">
           {{- dateFormat (or .Site.Params.dateFormat "Jan 2") .Date -}}
         </time>

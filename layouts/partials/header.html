@@ -1,9 +1,17 @@
-<div class="nav" role="navigation" aria-label="Main">
+<div role="navigation" aria-label="Main">
   <div class="nav-left">
     <a href="/" style="color: inherit;">{{- site.Title -}}</a>
   </div>
   <div class="nav-right">
-    {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+    <div id="nav-dropdown-menu" class="hidden" href="#">
+      {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+    </div>
+    <a id="nav-dropdown-button" href="#">
+      {{- partial "svg/menu.svg" -}}
+    </a>
+    <div id="nav-menu">
+      {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+    </div>
     <a id="theme-switcher" href="#">
       {{- partial "svg/sun.svg" -}}
       {{- partial "svg/moon.svg" -}}

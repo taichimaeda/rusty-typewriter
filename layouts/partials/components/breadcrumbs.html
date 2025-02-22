@@ -6,7 +6,8 @@
       {{- $data.Set "counter" $index }}
       {{- $data.Add "counter" 1 }}
       <a itemprop="item" href="{{ .Permalink }}">
-        <span itemprop="name">{{ cond (eq $index 0) (i18n "breadcrumb_home") .Title }}</span>
+        {{- $sectionTitle := (partial "title.html" .) }}
+        <span itemprop="name">{{ cond (eq $index 0) (i18n "breadcrumb_home") $sectionTitle }}</span>
       </a>
       <meta itemprop="position" content='{{ $data.Get "counter" }}' />
     </li>

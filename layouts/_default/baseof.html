@@ -17,8 +17,8 @@
           {{- partial "footer.html" . -}}
         </footer>
       </div>
-      {{- if site.Params.rtwt.sidePane -}}
-        <aside id="side-pane">
+      {{- if (and (default true .Params.rtwt.sidePane) site.Params.rtwt.sidePane) -}}
+      <aside id="side-pane" class="{{- cond site.Params.rtwt.sidePaneSticky "side-sticky" "" -}}">
           {{- block "side" . -}}{{- end -}}
         </aside>
       {{- end -}}
