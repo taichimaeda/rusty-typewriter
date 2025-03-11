@@ -9,9 +9,14 @@ footer: Made with ❤️ and powered by {{ .ThemeAnchor }} theme for {{ .HugoAnc
 # Home
 featured_posts: Featured Posts
 recent_posts: Recent Posts
+#
+# Search
+js_required: It's necessary to enable Javascript
+search_loading: Loading...
+search_title: Search
+search_placeholder: Search...
 
 # SidePane for home
-search: Search...
 see_all: See all...
 
 # Page

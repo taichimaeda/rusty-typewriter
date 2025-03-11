@@ -146,6 +146,11 @@
   font-family: var(--font-family-content);
 }
 
+.side-content-image {
+  max-width: 100%;
+  height: auto;
+}
+
 .side-details {
   display: grid;
   border-bottom: 1px var(--dim-color) solid;

@@ -3,6 +3,15 @@
 {{- range site.Data.rtwt.content.side.home -}}
   <div class="side-content">
     <h3>{{- .title -}}</h3>
+    {{- if .imagePath -}}
+      {{- if .imageHref -}}
+        <a href="{{- .imageHref -}}">
+          <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default "80%" .imageWidth -}}" />
+        </a>
+      {{- else -}}
+        <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default "80%" .imageWidth -}}" />
+      {{- end -}}
+    {{- end -}}
     <p>{{- .content -}}</p>
   </div>
 {{- end -}}

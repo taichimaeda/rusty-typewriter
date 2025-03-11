@@ -13,5 +13,7 @@
 {{- end -}}
 
 {{- define "side" -}}
-  {{- partial "side/single.html" . -}} 
+  <aside id="side-pane" class="{{- cond site.Params.rtwt.side.single.sidePaneSticky "side-sticky" "" -}}">
+    {{- partial "side/single.html" . -}} 
+  </aside>
 {{- end -}}

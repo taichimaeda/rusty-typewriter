@@ -1,0 +1,30 @@
+# Root
+theme_light: Tema Claro
+theme_dark: Tema Escuro
+
+# Footer
+scroll_top: Voltar ao topo
+footer: Feito com ❤️ usando o tema {{ .ThemeAnchor }} para {{ .HugoAnchor }}
+
+# Home
+featured_posts: Em Destaque
+recent_posts: Recentes
+
+# Search
+js_required: É necessário ativar o Javascript
+search_loading: Carregando...
+search_title: Pesquisar
+search_placeholder: Pesquisar...
+
+# SidePane for home
+see_all: Ver tudo...
+
+# Page
+breadcrumb_home: Início
+
+# SidePane for single pages
+details_words: palavras
+details_read_time: minutos de leitura
+side_table_of_contents: Tabela de Conteúdo
+side_attachments: Anexos
+side_related: Relacionados

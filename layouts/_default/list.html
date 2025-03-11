@@ -18,5 +18,6 @@
 {{- end -}}
 
 {{- define "side" -}}
-  
+  <aside id="side-pane" class="{{- cond site.Params.rtwt.side.list.sidePaneSticky "side-sticky" "" -}}">
+  </aside>
 {{- end -}}

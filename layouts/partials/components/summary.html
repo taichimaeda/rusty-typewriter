@@ -5,6 +5,6 @@
 {{- else -}}
   {{- $first_p_match := (findRE `<p>(.*?)</p>` .Content 1) -}}
   {{- if $first_p_match -}}
-    {{- replaceRE `<.*?>` "" (index $first_p_match 0) -}}
+    {{- (replaceRE `<.*?>` "" (index $first_p_match 0)) | safeHTML -}}
   {{- end -}}
 {{- end -}}

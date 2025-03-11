@@ -129,7 +129,7 @@ a > svg {
 }
 
 blockquote {
-  padding-left: 35px; 
+  padding-left: 25px; 
   margin: auto 5px;
   border-left: 6px var(--dim-color) solid; 
 }
@@ -149,6 +149,8 @@ th, td {
 }
 
 pre:has(code) {
+  display: grid;
+  overflow-x: auto;
   padding: .8rem;
   border-radius: .3rem;
   background-color: var(--code-background-color) !important;
