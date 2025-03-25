@@ -7,8 +7,8 @@
 
 <script>
   function searchBarSubmit(event) {
-    console.log(event);
-    const relativeUrl = `/search/?q=${encodeURIComponent(event.target.elements['searchInput'].value)}`;
+    event.preventDefault();
+    const relativeUrl = `/{{- site.Params.rtwt.searchPath -}}/?q=${encodeURIComponent(event.target.elements['searchInput'].value)}`;
     window.location.href = relativeUrl;
   }
 </script>

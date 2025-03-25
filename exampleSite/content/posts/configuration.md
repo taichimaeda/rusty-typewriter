@@ -7,7 +7,7 @@ featured = true
 weight = 2
 +++
 
-This page outlines the configuration options for the theme. There are plenty of settings for tune your site's layout and content presentation. Key features include options for controlling the side pane visibility, adjusting the number of items displayed on each list pages, and managing elements such as featured posts, recent posts, taxonomies, and related content.
+This page outlines the configuration options for the theme. There are plenty of settings for tweaking your site's layout and content presentation. Key features include options for controlling the side pane visibility, adjusting the number of items displayed on each list pages, and managing elements such as featured posts, recent posts, taxonomies, and related content.
 
 ## Global Config
 

@@ -1,4 +1,4 @@
-// From https://github.com/frjo/hugo-theme-zen/blob/main/assets/js/search.js
+// base from https://github.com/frjo/hugo-theme-zen/blob/main/assets/js/search.js
 import * as params from '@params';
 
 (function () {
@@ -43,15 +43,13 @@ import * as params from '@params';
     const items = {};
     results.forEach(function (result) {
       result.result.forEach(function (r) {
-        items[r.id] = r.doc;
+        items[r.doc.permalink] = r.doc;
       });
     });
-    console.log(items);
     showResults(items);
   }
 
-  function enableUI() {
-    const searchform = document.querySelector('.search-form');
+  function enableUI(searchform) {
     searchform.addEventListener('submit', function (e) {
       e.preventDefault();
       doSearch();
@@ -79,11 +77,13 @@ import * as params from '@params';
       .then(cb);
   }
 
-  buildIndex(function () {
-    const q = new URLSearchParams(window.location.search).get("q");
-    document.querySelector('.search-text').value = q || '';
-    doSearch(q);
-  });
-
-  enableUI()
+  const searchform = document.querySelector('.search-form');
+  if (searchform) {
+    buildIndex(function () {
+      const q = new URLSearchParams(window.location.search).get("q");
+      document.querySelector('.search-text').value = q || '';
+      doSearch(q);
+    });
+    enableUI(searchform)
+  }
 })();
