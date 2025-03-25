@@ -33,8 +33,8 @@ import * as params from '@params';
     results.appendChild(fragment);
   }
 
-  function doSearch() {
-    const query = document.querySelector('.search-text').value.trim();
+  function doSearch(q) {
+    const query = q || document.querySelector('.search-text').value.trim();
     const results = index.search({
       query: query,
       enrich: true,
@@ -46,6 +46,7 @@ import * as params from '@params';
         items[r.id] = r.doc;
       });
     });
+    console.log(items);
     showResults(items);
   }
 
@@ -59,11 +60,11 @@ import * as params from '@params';
       doSearch();
     });
     document.querySelector('.search-loading').classList.add('hidden');
-    document.querySelector('.search-input').classList.remove('hidden');
+    document.querySelector('.search-bar').classList.remove('hidden');
     document.querySelector('.search-text').focus();
   }
 
-  function buildIndex() {
+  function buildIndex(cb) {
     const searchindex = params.basePath + 'searchindex.json';
     document.querySelector('.search-loading').classList.remove('hidden');
     fetch(searchindex)
@@ -74,9 +75,15 @@ import * as params from '@params';
         data.forEach(function (item) {
           index.add(item);
         });
-      });
+      })
+      .then(cb);
   }
 
-  buildIndex();
-  enableUI();
+  buildIndex(function () {
+    const q = new URLSearchParams(window.location.search).get("q");
+    document.querySelector('.search-text').value = q || '';
+    doSearch(q);
+  });
+
+  enableUI()
 })();

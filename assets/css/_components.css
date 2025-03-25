@@ -123,6 +123,7 @@
   background-color: var(--dim-color);
   border-radius: .4rem;
   padding: .6rem;
+  margin-bottom: 1.8rem;
 }
 
 .search-bar > input {
@@ -191,3 +192,6 @@
   border-radius: 15px;
 }
 
+.search-result {
+  border-top: 1px var(--dim-color) solid;
+}

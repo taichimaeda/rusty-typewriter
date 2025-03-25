@@ -6,6 +6,7 @@ title = 'My New Hugo Site'
  [params.rtwt]
   sidePane = true
   countPageItems = 7 
+  searchPath = 'search'
  [params.rtwt.home]
   showBio = true
   showAuthorImg = true
