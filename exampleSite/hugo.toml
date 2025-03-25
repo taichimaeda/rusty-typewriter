@@ -1,6 +1,5 @@
 baseURL = 'https://example.org/'
-languageCode = 'pt-BR'
-defaultContentLanguage = 'pt'
+languageCode = 'en-US'
 title = 'Rusty Typewriter'
 theme = 'rusty-typewriter'
 themesdir = '../..'
