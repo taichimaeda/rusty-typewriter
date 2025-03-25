@@ -1,6 +1,6 @@
 +++
-date = '2025-02-19T21:33:31-03:00'
 title = 'Showcase'
+date = '2025-03-24T23:00:00-03:00'
 tags = ['example']
 series = ['styling']
 weigth = 3

@@ -1,5 +1,5 @@
 +++
-date = '2025-02-19T21:27:02-03:00'
+date = '2025-03-24T21:00:00-03:00'
 title = 'Getting Started'
 tags = ['starter','guide']
 topics = ['documentation']

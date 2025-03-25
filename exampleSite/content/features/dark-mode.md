@@ -1,6 +1,6 @@
 +++
-date = '2025-02-19T21:29:36-03:00'
 title = 'Dark Theme'
+date = '2025-03-24T23:00:00-03:00'
 tags = ['guide']
 topics = ['documentation']
 series = ['styling','features']

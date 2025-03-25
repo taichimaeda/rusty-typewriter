@@ -1,6 +1,6 @@
 +++
-date = '2025-02-22T01:11:57-03:00'
 title = 'Static Content'
+date = '2025-03-24T23:00:00-03:00'
 series = ['content','features']
 +++
 
