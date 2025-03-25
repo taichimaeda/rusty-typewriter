@@ -5,6 +5,11 @@ title = 'Rusty Typewriter'
 theme = 'rusty-typewriter'
 themesdir = '../..'
 
+# ghpages stuff
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # rtwt = Rusty Typewriter Theme
 [params.rtwt.side.home]
 taxonomies = ['tags','series']
