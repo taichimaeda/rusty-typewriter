@@ -2,7 +2,7 @@
 
 Rusty-Typewriter is a theme for Hugo sites made by [math-queiroz](https://github.com/math-queiroz). It's intended to be simple and used for blogs, being mostly inspired by the current [Zen Browser's website](https://zen-browser.app/) in style and other Hugo themes in functionality. It was initially intended for personal use, but made public for whomever find it worth using.
 
-![./docs/preview.png]
+![preview](./docs/preview.png)
 
 ## Features
 
