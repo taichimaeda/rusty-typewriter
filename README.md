@@ -2,9 +2,8 @@
 
 [![Hugo Version](https://img.shields.io/badge/hugo-0.121.0+-blue.svg)](https://github.com/gohugoio/hugo/releases)
 [![License](https://img.shields.io/github/license/math-queiroz/rusty-typewriter)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/releases)
-[![Stars](https://img.shields.io/github/stars/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/stargazers)
 [![Issues](https://img.shields.io/github/issues/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/issues)
+[![Stars](https://img.shields.io/github/stars/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/stargazers)
 
 A minimalist and elegant Hugo theme inspired by vintage typewriters, perfect for writers, bloggers, and content creators who appreciate a clean, distraction-free writing experience.
 
