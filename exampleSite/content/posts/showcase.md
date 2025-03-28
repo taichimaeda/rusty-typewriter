@@ -6,7 +6,7 @@ series = ['styling']
 weigth = 3
 +++
 
-This page focus on what you can do in terms of markdown syntax. Here you can see which and how each of the components are rendered to HTML in terms of structure and styling.
+This page focuses on what you can do in terms of markdown syntax. Here you can see which and how each of the components are rendered to HTML in terms of structure and styling.
 
 # The use of Headings
 
@@ -53,11 +53,11 @@ Paragraphs are containers for standard page content. Its font is defined and con
 
 ### Inline Code
 
-Inline code looks like this: `inline-code-example`. Defined by encolosing text in backticks (`), it's encolsed in a different color and with monospaced font.
+Inline code looks like this: `inline-code-example`. Defined by enclosing text in backticks (`), it's enclosed in a different color and with monospaced font.
 
 ### Code Block
 
-Code blocks supports syntax highlighting for plenty of languages.
+Code blocks support syntax highlighting for plenty of languages.
 
 ```yaml
 yaml:
@@ -68,7 +68,7 @@ yaml:
 
 ## Media
 
-Media like images may be inserted as with the syntax `![alt](/images/file.png)`
+Media like images may be inserted using the syntax `![alt](/images/file.png)`
 
 ![landscape](/images/landscape.png)
 

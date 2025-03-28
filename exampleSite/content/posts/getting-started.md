@@ -7,15 +7,15 @@ featured = true
 weight = 1
 +++
 
-This post will guide you in setting up your very own Hugo site with this theme. It covers the essentials parts: [installation](#Installation), [basic usage](#usage) and recomended [next steps](#next-steps). After setting up the basics, feel free to also take a look at other [posts](/posts)!
+This post will guide you in setting up your very own Hugo site with this theme. It covers the essential parts: [installation](#Installation), [basic usage](#usage) and recommended [next steps](#next-steps). After setting up the basics, feel free to also take a look at other [posts](/posts)!
 
 ## Installation
 
-This guide is a shorter version of [Hugo's quick start](https://gohugo.io/getting-started/quick-start/) (you may even say it's a quicker start). If you face any problems or want more comprehensible content, make sure to check it out!
+This guide is a shorter version of [Hugo's quick start](https://gohugo.io/getting-started/quick-start/) (you may even say it's a quicker start). If you face any problems or want more comprehensive content, make sure to check it out!
 
 ### Requirements
 
-- A basic understaing of Hugo (aka. [read the docs](https://gohugo.io/documentation/))
+- A basic understanding of Hugo (aka. [read the docs](https://gohugo.io/documentation/))
 - [Hugo CLI installed](https://gohugo.io/installation/)
 - [git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 

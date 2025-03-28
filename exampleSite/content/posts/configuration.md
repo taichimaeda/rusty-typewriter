@@ -7,11 +7,11 @@ featured = true
 weight = 2
 +++
 
-This page outlines the configuration options for the theme. There are plenty of settings for tweaking your site's layout and content presentation. Key features include options for controlling the side pane visibility, adjusting the number of items displayed on each list pages, and managing elements such as featured posts, recent posts, taxonomies, and related content.
+This page outlines the configuration options for the theme. There are plenty of settings for tweaking your site's layout and content presentation. Key features include options for controlling the side pane visibility, adjusting the number of items displayed on each list page, and managing elements such as featured posts, recent posts, taxonomies, and related content.
 
 ## Global Config
 
-As each key name is pretty self explanatory, just add the following ones you intend to override to your site's Hugo config file.
+The following configuration options can be added to your site's Hugo config file.
 
 ```toml
 [rusty_typewriter]

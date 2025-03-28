@@ -33,4 +33,4 @@ side_attachments: Attachments
 side_related: Related
 ```
 
-> Didn't find a value you're looking for? Check the [repository](https://github.com/math-queiroz/rusty-typewriter) for the given file (which may be updated with it), or create a new feature request!
+> **Note:** Didn't find a value you're looking for? Check the [repository](https://github.com/math-queiroz/rusty-typewriter) for the given file (which may be updated with it), or create a new feature request!
