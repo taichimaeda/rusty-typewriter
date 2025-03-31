@@ -109,9 +109,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This theme is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
-## Credits
-
-- Inspired by vintage typewriters and minimalist design
-- Built with [Hugo](https://gohugo.io/)
-- Icons from [Feather Icons](https://feathericons.com/)
