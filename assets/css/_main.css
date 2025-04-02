@@ -153,6 +153,7 @@ pre:has(code) {
   overflow-x: auto;
   padding: .8rem;
   border-radius: .3rem;
+  color: var(--code-text-color);
   background-color: var(--code-background-color) !important;
 }
 
