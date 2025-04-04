@@ -32,10 +32,15 @@ cd my-blog
 2. Add the theme as a git submodule:
 ```bash
 git init
-git submodule add https://github.com/yourusername/rusty-typewriter.git themes/rusty-typewriter
+git submodule add https://github.com/math-queiroz/rusty-typewriter.git themes/rusty-typewriter
 ```
 
-3. Start the development server:
+3. Add the theme to your `hugo.toml`:
+```toml
+theme = 'rusty-typewriter'
+```
+
+4. Start the development server:
 ```bash
 hugo server
 ```
