@@ -4,7 +4,7 @@ home:
   text: 'The definitive, configurable, customizable, old fashioned rusty coloured theme for web writers and readers.'
 side:
   home:
-  - content: 'With support for rendering static side pane content in the home page.'
+  - content: 'With support for rendering [static side]({{< ref "features/static-content/" >}}) pane markdown content in the home page.'
   - title: 'Side Content Media'
     content: 'And static side content also supports clickable media, like image links!'
     imagePath: 'images/hugo.svg'

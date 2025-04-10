@@ -12,7 +12,7 @@
         <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default "80%" .imageWidth -}}" />
       {{- end -}}
     {{- end -}}
-    <p>{{- .content -}}</p>
+    <p>{{- markdownify .content -}}</p>
   </div>
 {{- end -}}
 
@@ -21,7 +21,7 @@
     <h3>{{- $filter | title -}}</h3>
     <ul>
     {{- $limit := site.Params.rtwt.side.home.countTaxonomy }}
-    {{- $i:= $limit -}}
+    {{- $i := $limit -}}
 
     {{/* For some reason, using "range first N COLLECTION" doesn't work here */}}
     {{- range (sort . ".Count" "desc") -}}
