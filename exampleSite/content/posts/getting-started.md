@@ -7,7 +7,7 @@ featured = true
 weight = 1
 +++
 
-This post will guide you in setting up your very own Hugo site with this theme. It covers the essential parts: [installation](#Installation), [basic usage](#usage) and recommended [next steps](#next-steps). After setting up the basics, feel free to also take a look at other [posts](/posts)!
+This post will guide you in setting up your very own Hugo site with this theme. It covers the essential parts: [installation](#Installation), [basic usage](#usage) and recommended [next steps](#next-steps). After setting up the basics, feel free to also take a look at other [posts]({{< ref "/posts" >}})!
 
 ## Installation
 
@@ -71,7 +71,7 @@ Also, make sure to give the [content management docs](https://gohugo.io/content-
 
 At last, if you need directions as to where to go next:
 
-- Tweak the `hugo.toml` config file based on [the boilerplate one](/posts/configuration);
-- Get ~ricing~ styling your themed site from the [customization](/features/customization) reference;
+- Tweak the `hugo.toml` config file based on [the boilerplate one]({{< ref "/posts/configuration" >}});
+- Get ~ricing~ styling your themed site from with CSS;
 - Make sure to leave a star at the theme repo and support my work if you enjoy it!
 
