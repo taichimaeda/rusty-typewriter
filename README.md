@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/issues)
 [![Stars](https://img.shields.io/github/stars/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/stargazers)
 
-A minimalist and elegant Hugo theme inspired by vintage typewriters, perfect for writers, bloggers, and content creators who appreciate a clean, distraction-free writing experience.
+A minimalist and elegant Hugo theme styled towards serif fonts and a warm color pallete. Perfect for writers, bloggers, and content creators who appreciate a clean and distraction-free experience.
 
 ![preview](https://raw.githubusercontent.com/math-queiroz/rusty-typewriter/main/images/screenshot.png)
 
