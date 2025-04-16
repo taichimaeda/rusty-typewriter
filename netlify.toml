@@ -4,7 +4,5 @@
   publish = "exampleSite/public"
 
 [context.production]
-  environment = { 
-    HUGO_VERSION = "v0.122.0", BASE_URL = "https://rusty-typewriter.netlify.app"
-  }
+  environment = { HUGO_VERSION = "v0.122.0", BASE_URL = "https://rusty-typewriter.netlify.app" }
 
