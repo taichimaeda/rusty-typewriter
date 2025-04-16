@@ -1,8 +1,19 @@
+[build.environment]
+  BASE_URL = "https://rusty-typewriter.netlify.app/demo"
+  BASE_PATH = "demo"
+  HUGO_VERSION = "v0.122.0"
+  NODE_VERSION = "22"
+  TZ = "America/Sao_Paulo"
+
 [build]
   base = "exampleSite/"
-  command = "mv ../../{repo,rusty-typewriter} && hugo --gc --minify --baseURL $BASE_URL && mv ../../{rusty-typewriter,repo}"
   publish = "public"
-
-[context.production]
-  environment = { HUGO_VERSION = "v0.122.0", BASE_URL = "https://rusty-typewriter.netlify.app" }
+  command = """\
+    mv ../../{repo,rusty-typewriter} && \
+    hugo --gc --minify --baseURL $BASE_URL && \
+    mkdir public/$BASE_PATH && \
+    mv public/{*,$BASE_PATH} && \
+    (mv public/$BASE_PATH/404.html public || true) && \
+    mv ../../{rusty-typewriter,repo}
+  """
 
