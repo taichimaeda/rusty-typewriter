@@ -11,8 +11,9 @@
   command = """\
     mv ../../{repo,rusty-typewriter} && \
     hugo --gc --minify --baseURL $BASE_URL && \
-    mkdir public/$BASE_PATH && \
-    mv public/{*,$BASE_PATH} && \
+    mkdir tmp && \
+    mv public/* tmp && \
+    mv tmp $BASE_PATH && \
     (mv public/$BASE_PATH/404.html public || true) && \
     mv ../../{rusty-typewriter,repo}
   """
