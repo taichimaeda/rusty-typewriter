@@ -1,6 +1,6 @@
 [build]
   base = "exampleSite/"
-  command = "mv ../{repo,rusty-typewriter} && cd exampleSite && hugo --gc --minify --baseURL $BASE_URL && mv ../../{rusty-typewriter,repo}"
+  command = "mv ../../{repo,rusty-typewriter} && hugo --gc --minify --baseURL $BASE_URL && mv ../../{rusty-typewriter,repo}"
   publish = "exampleSite/public"
 
 [context.production]
