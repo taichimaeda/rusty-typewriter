@@ -8,9 +8,11 @@
   base = "exampleSite/"
   publish = "public"
   command = """\
+    # dir should have theme name (or else it isn't found)
     mv ../../{repo,rusty-typewriter} && \
     hugo --gc --minify -b "$URL/$BASE_PATH" -d "public/$BASE_PATH" && \
     mv ../../{rusty-typewriter,repo} && \
-    (mv public/$BASE_PATH/404.html public || true) && \
+    # file 404.html belongs to root dir
+    (mv public/$BASE_PATH/404.html public || true)
   """
 
