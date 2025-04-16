@@ -1,7 +1,7 @@
 [build]
   base = "exampleSite/"
   command = "mv ../../{repo,rusty-typewriter} && hugo --gc --minify --baseURL $BASE_URL && mv ../../{rusty-typewriter,repo}"
-  publish = "exampleSite/public"
+  publish = "public"
 
 [context.production]
   environment = { HUGO_VERSION = "v0.122.0", BASE_URL = "https://rusty-typewriter.netlify.app" }
