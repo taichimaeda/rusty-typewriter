@@ -13,7 +13,7 @@
     hugo --gc --minify --baseURL $BASE_URL && \
     mkdir tmp && \
     mv public/* tmp && \
-    mv tmp $BASE_PATH && \
+    mv tmp public/$BASE_PATH && \
     (mv public/$BASE_PATH/404.html public || true) && \
     mv ../../{rusty-typewriter,repo}
   """
