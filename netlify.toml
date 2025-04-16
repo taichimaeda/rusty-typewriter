@@ -1,5 +1,4 @@
 [build.environment]
-  BASE_URL = "https://rusty-typewriter.netlify.app/demo"
   BASE_PATH = "demo"
   HUGO_VERSION = "v0.122.0"
   NODE_VERSION = "22"
@@ -9,12 +8,11 @@
   base = "exampleSite/"
   publish = "public"
   command = """\
+    # dir should have theme name (or else it isn't found)
     mv ../../{repo,rusty-typewriter} && \
-    hugo --gc --minify --baseURL $BASE_URL && \
-    mkdir tmp && \
-    mv public/* tmp && \
-    mv tmp public/$BASE_PATH && \
-    (mv public/$BASE_PATH/404.html public || true) && \
+    hugo --gc --minify -b "$URL/$BASE_PATH" -d "public/$BASE_PATH" && \
     mv ../../{rusty-typewriter,repo}
+    # file 404.html belongs to root dir
+    (mv public/$BASE_PATH/404.html public || true) && \
   """
 
