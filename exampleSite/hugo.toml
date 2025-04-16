@@ -1,13 +1,8 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-US'
 title = 'Rusty Typewriter'
 theme = 'rusty-typewriter'
 themesdir = '../..'
 
-# ghpages stuff
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+languageCode = 'en-US'
 
 # rtwt = Rusty Typewriter Theme
 [params.rtwt.side.home]
