@@ -1,12 +1,12 @@
 home:
-  image: 'images/profile.jpg'
+  image: 'images/rt_logo.jpg'
   greetings: 'A Hugo Theme for Bloggers!'
   text: 'The definitive, configurable, customizable, old fashioned rusty coloured theme for web writers and readers.'
 side:
   home:
-  - content: 'With support for rendering [static side]({{< ref "features/static-content/" >}}) pane markdown content in the home page.'
+  - content: 'With support for rendering staic [side pane content]({{< ref "features/static-content/" >}}) in the home page.'
   - title: 'Side Content Media'
-    content: 'And static side content also supports clickable media, like image links!'
+    content: 'Supporting markdown syntax and redirectable media, like images!'
     imagePath: 'images/hugo.svg'
     imageHref: 'https://gohugo.io'
     imageWidth: '100%'

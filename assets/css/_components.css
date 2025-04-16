@@ -38,21 +38,6 @@
   font-size: .8rem;
 }
 
-.greetings {
-  text-align: center;
-  margin: 3rem auto 5rem;
-  width: fit-content;
-}
-
-.greetings-title {
-  margin: .1rem;
-}
-
-.greetings-text {
-  width: 70%;
-  margin: 0 15%;
-}
-
 .flat-list-item {
   padding: .5rem;
   border-top: 1px var(--dim-color) solid; 

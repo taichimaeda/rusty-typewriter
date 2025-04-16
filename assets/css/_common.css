@@ -5,3 +5,13 @@
 .flex { display: flex }
 .grow { flex-grow: 1 }
 
+.centered-container {
+  text-align: center;
+  margin: 3rem auto 5rem;
+  width: fit-content;
+}
+
+.margin-sm {
+  margin: .1rem;
+}
+

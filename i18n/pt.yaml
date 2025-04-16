@@ -2,6 +2,11 @@
 theme_light: Tema Claro
 theme_dark: Tema Escuro
 
+# Not found (404)
+not_found_title: Oops, página não encontrada!
+not_found_desc: Nem todos que vagueiam estão perdidos, mas não há nada mais para explorar por aqui
+not_found_home_link: Voltar ao Início
+
 # Footer
 scroll_top: Voltar ao topo
 footer: Feito com ❤️ usando o tema {{ .ThemeAnchor }} para {{ .HugoAnchor }}

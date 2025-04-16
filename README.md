@@ -1,5 +1,6 @@
 # Rusty Typewriter
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9fdd7e9-ca88-49c4-9c65-e2532d926840/deploy-status)](https://app.netlify.com/sites/rusty-typewriter/deploys)
 [![Hugo Version](https://img.shields.io/badge/hugo-0.116.0+-blue.svg)](https://github.com/gohugoio/hugo/releases)
 [![License](https://img.shields.io/github/license/math-queiroz/rusty-typewriter)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/math-queiroz/rusty-typewriter)](https://github.com/math-queiroz/rusty-typewriter/issues)

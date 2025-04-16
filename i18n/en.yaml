@@ -2,6 +2,11 @@
 theme_light: Light Theme
 theme_dark: Dark Theme
 
+# Not found (404)
+not_found_title: Whoops, page not found!
+not_found_desc: Not all who wander are lost, but there's nothing left to explore here
+not_found_home_link: Go Home
+
 # Footer
 scroll_top: Scroll to Top
 footer: Made with ❤️ and powered by {{ .ThemeAnchor }} theme for {{ .HugoAnchor }}
