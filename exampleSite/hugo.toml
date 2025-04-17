@@ -32,8 +32,10 @@ name = 'About'
 pageRef = '/about.md'
 weight = 3
 
-# search related stuff ================
+# enable robots file ================
+enableRobotsTXT = true
 
+# build search index ================
 [outputFormats]
  [outputFormats.SearchIndex]
   mediaType = "application/json"
@@ -47,5 +49,4 @@ weight = 3
 
 [outputs]
  home = ["HTML","RSS", "SearchIndex"]
-
-# =====================================
+# ===================================
