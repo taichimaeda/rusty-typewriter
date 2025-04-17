@@ -107,13 +107,18 @@ main#main-content {
   flex-grow: 1;
 }
 
+main#main-content img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
 footer#main-footer {
   margin: 5rem auto 0;
 }
 
 section {
   font-family: var(--font-family-content);
-  text-align: justify;
 }
 
 a {
