@@ -3,6 +3,7 @@ theme = 'rusty-typewriter'
 themesdir = '../..'
 
 languageCode = 'en-US'
+enableRobotsTXT = true
 
 # rtwt = Rusty Typewriter Theme
 [params.rtwt.side.home]
@@ -31,9 +32,6 @@ weight = 2
 name = 'About'
 pageRef = '/about.md'
 weight = 3
-
-# enable robots file ================
-enableRobotsTXT = true
 
 # build search index ================
 [outputFormats]
