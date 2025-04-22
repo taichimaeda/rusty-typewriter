@@ -20,6 +20,7 @@ body {
   background-color: var(--body-background-color);
   color: var(--body-text-color);
   font-family: var(--font-family-main);
+  font-weight: var(--font-weight-main);
   line-height: 1.5;
   margin: 1rem;
   transition: var(--bgc-transition);
@@ -121,6 +122,7 @@ footer#main-footer {
 
 section {
   font-family: var(--font-family-content);
+  font-weight: var(--font-weight-content);
 }
 
 a {

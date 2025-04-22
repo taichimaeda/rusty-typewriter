@@ -53,6 +53,7 @@
 
 .flat-list-item > small > p {
   font-family: var(--font-family-summary);
+  font-weight: var(--font-weight-summary);
   margin: .25rem 0;
 }
 
@@ -72,6 +73,7 @@
 
 .list-group-summary {
   font-family: var(--font-family-summary);
+  font-weight: var(--font-weight-summary);
   text-align: justify;
   overflow: hidden;
   display: -webkit-box;
@@ -130,6 +132,7 @@
 
 .side-content > p {
   font-family: var(--font-family-content);
+  font-weight: var(--font-weight-content);
 }
 
 .side-content-image {
