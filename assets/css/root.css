@@ -21,6 +21,8 @@
 
   --primary-color: #cd5c5c;
   --selection-color: #dda19b;
+
+  --dim-opacity: 65%;
 }
 
 :root[color-scheme^='dark'] {
@@ -29,5 +31,7 @@
 
   --primary-color: #cd5c5c;
   --selection-color: #7d4141;
+
+  --dim-opacity: 50%;
 }
 

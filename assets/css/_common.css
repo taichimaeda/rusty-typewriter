@@ -25,5 +25,5 @@
 }
 
 .dim {
-  opacity: 50%;
+  opacity: var(--dim-opacity);
 }
