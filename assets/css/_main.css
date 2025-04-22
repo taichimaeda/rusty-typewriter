@@ -36,6 +36,7 @@ div#container {
 }
 
 div#main-pane {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   width: 768px;
@@ -92,8 +93,9 @@ a#nav-dropdown-button {
 
 div#nav-dropdown-menu {
   position: relative;
-  top: 85px;
-  left: 65px;
+  top: 34px;
+  left: -44px;
+  width: fit-content;
   border-radius: 5px;
   border: 1px var(--dim-color) solid;
   padding: 0 1rem;

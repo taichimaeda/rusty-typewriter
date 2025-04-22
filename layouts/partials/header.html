@@ -3,8 +3,10 @@
     <a href="{{- absURL "" -}}" style="color: inherit;">{{- site.Title -}}</a>
   </div>
   <div class="nav-right">
-    <div id="nav-dropdown-menu" class="hidden" href="#">
-      {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+        {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+      </div>
     </div>
     <a id="nav-dropdown-button" href="#">
       {{- partial "svg/menu.svg" -}}
