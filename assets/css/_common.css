@@ -2,12 +2,9 @@
 
 .notransition { transition: none !important }
 .hidden { display: none }
+
 .flex { display: flex }
 .grow { flex-grow: 1 }
-
-.no-underline {
-  text-decoration: none;
-}
 
 .centered-container {
   text-align: center;
@@ -15,15 +12,10 @@
   width: fit-content;
 }
 
-.margin-sm {
-  margin: .1rem;
-}
-
+.dim { opacity: var(--dim-opacity); }
+.margin-sm { margin: .1rem; }
 .text-sm {
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-.dim {
-  opacity: var(--dim-opacity);
-}

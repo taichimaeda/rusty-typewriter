@@ -18,7 +18,7 @@ title = 'My New Hugo Site'
  [params.rtwt.side.home]
   sidePaneSticky = false 
   taxonomies = ['tags']
-  countTaxonomy = 5
+  countTaxonomy = 6
  [params.rtwt.side.list]
   sidePaneSticky = false
  [params.rtwt.side.single]
