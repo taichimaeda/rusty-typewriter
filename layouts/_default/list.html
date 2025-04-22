@@ -7,7 +7,7 @@
     {{- range .Pages -}}
       <div class="list-group-heading">
         <a href="{{- .RelPermalink -}}">{{- partial "title.html" . -}}</a>
-        <time style="float: right;" datetime="2023-05-02T00:00:00Z">
+        <time class="dim" style="float: right;" datetime="2023-05-02T00:00:00Z">
           {{- dateFormat (or .Site.Params.dateFormat "Jan 2") .Date -}}
         </time>
       </div>
