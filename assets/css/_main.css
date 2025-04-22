@@ -131,8 +131,13 @@ section a {
 
 a {
   color: var(--primary-color);
+  transition: color 80ms;
   text-decoration: none;
   text-underline-offset: 4px;
+}
+
+a:hover {
+  color: color-mix(in lab, var(--primary-color) 60%, #fff 40%);
 }
 
 a > svg {
