@@ -125,9 +125,14 @@ section {
   font-weight: var(--font-weight-content);
 }
 
+section a {
+  text-decoration: underline;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
+  text-underline-offset: 4px;
 }
 
 a > svg {

@@ -7,7 +7,7 @@
     <div class="flat-list-item">
       <div>
         <a href="{{- .RelPermalink -}}">{{- .LinkTitle -}}</a>
-        <time style="float: right;" datetime="2023-05-02T00:00:00Z">
+        <time class="text-sm dim" style="float: right;" datetime="2023-05-02T00:00:00Z">
           {{- dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date -}}
         </time>
       </div>

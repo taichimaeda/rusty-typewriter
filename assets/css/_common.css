@@ -1,9 +1,13 @@
 /* commonly reused rules */
 
-.hidden { display: none }
 .notransition { transition: none !important }
+.hidden { display: none }
 .flex { display: flex }
 .grow { flex-grow: 1 }
+
+.no-underline {
+  text-decoration: none;
+}
 
 .centered-container {
   text-align: center;
@@ -15,3 +19,11 @@
   margin: .1rem;
 }
 
+.text-sm {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.dim {
+  opacity: 50%;
+}
