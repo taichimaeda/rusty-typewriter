@@ -13,6 +13,6 @@
     hugo --gc --minify -b "$URL/$BASE_PATH" -d "public/$BASE_PATH" && \
     mv ../../{rusty-typewriter,repo} && \
     # file 404.html belongs to root dir
-    (mv public/$BASE_PATH/{404.html,sitemap.xml,robots.txt,images} public || true)
+    (mv public/$BASE_PATH/{404.html,sitemap.xml,robots.txt} public || true)
   """
 
