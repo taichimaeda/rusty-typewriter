@@ -106,11 +106,10 @@
 
 .search-bar {
   display: flex;
-  width: 98%;
   background-color: var(--dim-color);
   border-radius: .4rem;
   padding: .6rem;
-  margin-bottom: 1.8rem;
+  margin: .6rem 0 0 0;
 }
 
 .search-bar > input {

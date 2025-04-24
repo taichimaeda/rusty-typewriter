@@ -3,6 +3,8 @@
 .notransition { transition: none !important }
 .hidden { display: none }
 
+@media (max-width: 1128px) { .show-md{ display: block !important; } }
+
 .flex { display: flex }
 .grow { flex-grow: 1 }
 

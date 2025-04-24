@@ -4,10 +4,10 @@ home:
   text: 'The definitive, configurable, customizable, old fashioned rusty coloured theme for web writers and readers.'
 side:
   home:
-  - content: 'With support for rendering staic [side pane content]({{< ref "features/static-content/" >}}) in the home page.'
-  - title: 'Side Content Media'
-    content: 'Supporting markdown syntax and redirectable media, like images!'
-    imagePath: 'images/hugo.svg'
-    imageHref: 'https://gohugo.io'
+  - content: 'If you like the theme make sure to give the repo a star!'
+    imagePath: 'images/gh_source.png'
+    imageHref: 'https://github.com/math-queiroz/rusty-typewriter'
     imageWidth: '100%'
+  - title: 'Side Pane Features'
+    content: 'There are lots of features regarding the side pane, check [the docs]({{< ref "features/static-content" >}}) for info.'
 

@@ -5,7 +5,7 @@
     <h3>{{- .title -}}</h3>
     {{- if .imagePath -}}
       {{- if .imageHref -}}
-        <a href="{{- .imageHref -}}">
+        <a href="{{- .imageHref -}}" target="_blank" rel="noopener noreferrer">
           <img class="side-content-image" src="{{- .imagePath -}}" width="{{- default "80%" .imageWidth -}}" />
         </a>
       {{- else -}}
