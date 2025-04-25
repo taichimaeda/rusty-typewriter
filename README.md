@@ -12,7 +12,7 @@ A minimalist and elegant Hugo theme styled towards a warm color pallete. Perfect
 
 ## Features
 
-- 🎨 Clean, minimalist design with a vintage typewriter aesthetic
+- 🎨 Clean, minimalist design
 - 📱 Fully responsive layout
 - 🔍 Built-in search functionality
 - 📚 Table of contents support
