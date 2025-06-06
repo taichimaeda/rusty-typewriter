@@ -125,8 +125,8 @@
 }
 
 .side-content {
-  padding: .5rem; 
   border-bottom: 1px var(--dim-color) solid;
+  font-size: .8rem;
 }
 
 .side-content > p {
